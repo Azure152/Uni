@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+body {
+    height: 635px;
+    min-height: 100vh;
+    background-image: url("../img/Raven.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100%;
+    background-size: cover;
+    /* box-shadow: inset 0 -4px 5px -2px #000; */
+}
+#main {
+    height: calc(100% - 40px);
+    background: linear-gradient(135deg, transparent 75%, rgba(82,82,82, 0.7) 25% );
+}
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 5px 0 #000;
+}
+
+/* ------------------ Clases Generales ------------------ */
+
+.button {
+    padding: 5px 15px;
+    cursor: pointer;
+    border: none;
+    font: 1.2rem 'Segoe UI';
+}
+/* ------------------ Arbol de estilos ------------------ */
+
+
+.navHeader {
+    background-image: url("../img/Raven.jpg");
+    background-attachment: fixed;
+    background: transparent;
+}
+
+.buttonNav {
+    background-color: transparent;
+    width: 50px;
+    height: 40px;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttonNav:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+    .buttonNav > span {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+        .buttonNav > span > hr {
+            width: 80%;
+        }
